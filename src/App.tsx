@@ -5,7 +5,7 @@ import SchoolInput from './components/SchoolInput';
 import NameOutput from './components/NameOutput';
 import SchoolOutput from './components/SchoolOutput';
 import WorkInput from './components/WorkInput';
-import WorkOutput from './WorkOutput';
+import WorkOutput from './components/WorkOutput';
 import { IPersonalData, ISchool, IWork } from './components/ts/interfaces/global_interfaces';
 import { useState } from 'react';
 import { Typography } from "@mui/material";
@@ -24,13 +24,14 @@ function App() {
   }
   function handleSchoolData(schoolData: object){
     setSchoolData(
-      ...schoolData as ISchool
+
+      {...schoolData as ISchool}
     )
     setIsVisible(true)
   }
   function handleWorkData(workData: object){
     setWorkData(
-      ...workData as IWork
+      {...workData as IWork}
     )
     setIsVisible(true)
   }

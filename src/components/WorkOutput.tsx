@@ -1,4 +1,4 @@
-import { IWork } from "./components/ts/interfaces/global_interfaces";
+import { IWork } from "./ts/interfaces/global_interfaces";
 
 interface Props {
     workData: IWork
